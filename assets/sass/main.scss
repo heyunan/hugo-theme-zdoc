@@ -17,6 +17,8 @@ $light-nav-logo-color: {{ .Site.Data.color.light_nav_logo_color }};
 $light-nav-menu-color: {{ .Site.Data.color.light_nav_menu_color }};
 $light-nav-icon-color: {{ .Site.Data.color.light_nav_icon_color }};
 
+
+
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 @import 'abstracts/functions';
@@ -37,7 +39,7 @@ $light-nav-icon-color: {{ .Site.Data.color.light_nav_icon_color }};
 @import 'components/drawer';
 @import 'components/modal';
 @import 'components/language';
-@import 'components/breadcrumb';
+@import 'components/zdoc-breadcrumb';
 @import 'components/pagination';
 @import 'components/button';
 @import 'components/summary';
@@ -58,3 +60,10 @@ $light-nav-icon-color: {{ .Site.Data.color.light_nav_icon_color }};
 @import 'pages/single';
 @import 'pages/list';
 @import 'pages/blog';
+
+
+.card {
+ @include themify($themes) {
+    background-color: themed('card-background-color') !important;
+  }
+}

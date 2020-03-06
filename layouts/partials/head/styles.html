@@ -1,7 +1,11 @@
 {{ $main_options := (dict "targetPath" "css/main.css" "outputStyle" "compressed") }}
 {{ $main_template := resources.Get "sass/main.scss" }}
 {{ $main_style := $main_template | resources.ExecuteAsTemplate "main_parsed.scss" . | toCSS $main_options | resources.Minify }}
+<!-- <link rel="stylesheet" href="{{ `bootstrap/css/bootstrap.min.css` | absURL }}">-->
+<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
 <link rel="stylesheet" href="{{ $main_style.RelPermalink }}">
+
+
 
 {{ if .Site.Params.custom_css }}
 {{ range .Site.Params.custom_css }}

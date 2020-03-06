@@ -3,7 +3,7 @@
     {{ if .IsHome }}
       {{ .Site.Title }}
     {{ else }}
-      {{ $.Param "Title" }}
+      {{.CurrentSection.Title}}
     {{ end }}
   </h6>
   <ul>

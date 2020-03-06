@@ -4,6 +4,7 @@ dark_link_hover_color = "#FF6188"
 dark_nav_logo_color = "#FCFCFA"
 dark_nav_menu_color = "#FCFCFA"
 dark_nav_icon_color = "#ccc"
+dark_card_background_color = "#2d292e"
 
 
 light_active_font_color = "#007d9c"
@@ -12,3 +13,4 @@ light_link_hover_color = "#00ACD7"
 light_nav_logo_color = "#242729"
 light_nav_menu_color = "#242729"
 light_nav_icon_color = "#535a61"
+light_card_background_color = "#fff"
